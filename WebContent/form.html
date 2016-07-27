@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="/Servlet_testDemo/RequestDemo3" method="post">
+		User:    <input type="text" name="username"><br>
+		Password:<input type="password" name="password"><br>
+		Gender:  <input type="radio" name="gender" value="male">Male
+				 <input type="radio" name="gender" value="female">Female<br> 
+		Address: <select name="city">
+					<option value="beijing">Beijing</option>
+					<option value="singapore">Singapore</option>
+				 </select>
+				 <br>
+		Hobies:  <input type="checkbox" name="likes" value="sing">sing
+				 <input type="checkbox" name="likes" value="dance">dance
+				 <input type="checkbox" name="likes" value="coding">coding
+				 <br>
+		Remarks: <textarea rows="6" cols="60" name="description"></textarea><br>
+		Photo:   <input type="file" name="photos"><br>
+		<input type="hidden" name="id" value="12312">
+		<input type="submit" value="submit">
+	</form>
+	
+	<form action="/Servlet_testDemo/RequestDemo3" method="get">
+		User:    <input type="text" name="username"><br>
+		<input type="submit" value="submit">
+	</form>
+</body>
+</html>
